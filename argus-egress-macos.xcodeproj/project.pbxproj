@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		00CB38172D09620400177A41 /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00CB38162D09620400177A41 /* HaishinKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		00016FE92D04A5BB00A15368 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CB38172D09620400177A41 /* HaishinKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "argus-egress-macos";
 			packageProductDependencies = (
+				00CB38162D09620400177A41 /* HaishinKit */,
 			);
 			productName = "argus-egress-macos";
 			productReference = 00016FD72D04A5B900A15368 /* argus-egress-macos.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 00016FCE2D04A5B900A15368;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				00CB38152D09620400177A41 /* XCRemoteSwiftPackageReference "HaishinKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 00016FD82D04A5B900A15368 /* Products */;
 			projectDirPath = "";
@@ -549,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00CB38152D09620400177A41 /* XCRemoteSwiftPackageReference "HaishinKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shogo4405/HaishinKit.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00CB38162D09620400177A41 /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CB38152D09620400177A41 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = HaishinKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00016FCF2D04A5B900A15368 /* Project object */;
 }
